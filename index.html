@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/1200px-Circle-icons-calculator.svg.png">
+  <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous" deferf></script>
+  
+  <title>Calculator app</title>
+
+</head>
+<body id="body">
+  <div class="divv"></div>
+  <main>
+    <form>
+      <div class="header">
+        <div class="head" id="head">
+          <span id="calc">calc</span>
+        </div>
+        <div class="sideHeader">
+          <label class="THEME" id="THEME"><span id="TH">THEME</span>
+            <input type="checkbox" class="checkbox" hidden  name="checkbox" id="checkbox">
+            <span class="check" id="check"></span>
+          </label>
+          <label class="THEME2" id="THEME2">
+            <input type="checkbox" class="checkbox2" hidden name="checkbox2" id="checkbox2">
+            <span class="check2" id="check2"></span>
+          </label>
+        </div>
+      </div>
+      <div class="middle">
+        <input dir="rtl" autocomplete="off" class="num" id="num" type="text" maxlength="10" name="display">
+      </div>
+      <div class="footer" id="footer">
+        <div class="upperFooter">
+          <input type="button" id="B7" onclick="display.value += '7'" value="7" class="B7 B">
+          <input type="button" id="B8" onclick="display.value += '8'" value="8" class="B8 B">
+          <input type="button" id="B9" onclick="display.value += '9'" value="9" class="B9 B">
+          <input type="button" id="Bdel" onclick="display.value = display.value.toString().slice(0,-1)" value="del" class="Bdel">
+          <input type="button" id="B4" onclick="display.value += '4'" value="4" class="B4 B">
+          <input type="button" id="B5" onclick="display.value += '5'" value="5" class="B5 B">
+          <input type="button" id="B6" onclick="display.value += '6'" value="6" class="B6 B">
+          <input type="button" id="Bplus" onclick="display.value += '+'" value="+" class="Bplus B">
+          <input type="button" id="B1" onclick="display.value += '1'" value="1" class="B1 B">
+          <input type="button" id="B2" onclick="display.value += '2'" value="2" class="B2 B">
+          <input type="button" id="B3" onclick="display.value += '3'" value="3" class="B3 B">
+          <input type="button" id="Bmins" onclick="display.value += '-'" value="-" class="Bmins B">
+          <input type="button" id="Bdot" onclick="display.value += '.'" value="." class="Bdot B">
+          <input type="button" id="B0" onclick="display.value += '0'" value="0" class="B0 B">
+          <input type="button" id="Bdiv" onclick="display.value += '/'" value="/" class="Bdiv B">
+          <input type="button" id="Bmulti" onclick="display.value += '*'" value="x" class="Bmulti B">
+        </div>
+        <div class="lowerFooter">
+          <input type="button" id="Breset" onclick="display.value = ''" value="RESET" class="Breset">
+          <input type="button" id="Bequal" onclick="display.value = eval(display.value)" value="=" class="Bequal">
+        </div>
+      </div>
+    </form>
+  </main>
+  <div class="divv"></div>
+  <script src="main.js"></script>
+</body>
+</html>
